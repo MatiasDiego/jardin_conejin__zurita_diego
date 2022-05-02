@@ -72,14 +72,18 @@ body {
 
 /************ HERO SECTION ************/
 
-.hero {
+.container {
+    padding: 50px;
+}
+
+/* .hero {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     grid-column-gap: 2em;
     justify-items: center;
     padding: 50px;
-}
+} */
 
 .hero__content { 
     display: flex;
@@ -213,7 +217,7 @@ body {
     align-items: center;
 }
 
-.btn {
+.btn__galery {
     background-color: #A9294F;
     padding: 8px 18px;
     border-radius: 18px;
