@@ -76,15 +76,6 @@ body {
     padding: 50px;
 }
 
-/* .hero {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-    grid-column-gap: 2em;
-    justify-items: center;
-    padding: 50px;
-} */
-
 .hero__content { 
     display: flex;
     flex-direction: column;
