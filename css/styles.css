@@ -38,6 +38,10 @@ input {
   border: 1px solid #c2c2c2;
 }
 
+.header__ul {
+    margin-bottom: 0;
+}
+
 body {
   background-color: #fdf6ec;
   position: relative;
@@ -358,7 +362,7 @@ textarea {
 
 /************ OUR TEACHERS ************/
 
-.teachers {
+/* .teachers {
   display: grid;
   height: 100%;
   grid-template-columns: 40% 60%;
@@ -366,7 +370,7 @@ textarea {
   grid-column-gap: 2em;
   justify-items: center;
   padding: 50px;
-}
+} */
 
 .teachers__content {
   display: flex;
@@ -497,12 +501,6 @@ textarea {
   }
 
   /************ HERO SECTION ************/
-  .hero__imgcontainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
   .hero__title {
     font-size: 1.8em;
     font-weight: 600;
@@ -512,6 +510,12 @@ textarea {
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 2em;
+  }
+
+  .hero__imgcontainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   /************ MENU MOBILE ************/
@@ -567,6 +571,7 @@ textarea {
     font-size: 1.8em;
     font-weight: 600;
   }
+
   .aboutus__paragraph {
     width: 100%;
     margin-bottom: 1em;
@@ -596,6 +601,48 @@ textarea {
   .valobj__ul {
     margin-bottom: 2em;
   }
+
+  /************ OUR TEACHERS ************/
+  .teachers__title {
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .teachers__paragraph {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .teachers__imgcontainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /************ CONTACT ************/
+  .contact__title{
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .form__contact {
+    text-align: center;
+  }
+
+  /************ GALERY PAGE ************/
+  .galerypage__title {
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .galerypage__paragraph {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -603,6 +650,18 @@ textarea {
   .footer__paragraph {
     font-size: 13px;
     width: 45vw;
+    text-align: center;
+  }
+
+  /************ CONTACT ************/
+  .form__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galerypage__paragraph {
     text-align: center;
   }
 }
@@ -668,7 +727,11 @@ textarea {
   }
 
   .valobj__ul {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .galerypage__paragraph {
+    text-align: center;
   }
 }
 
