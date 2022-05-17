@@ -1,0 +1,11 @@
+{
+  "name": "jardin_conejin__zurita_diego",
+  "version": "1.0.0",
+  "description": "Agregando SASS al proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Matías Zurita",
+  "license": "ISC"
+}

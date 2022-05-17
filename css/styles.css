@@ -46,7 +46,11 @@ body {
   background-color: #fdf6ec;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 150px;
+  padding-bottom: 190px;
+}
+
+.container {
+  height: 80vh;
 }
 
 /************ HEADER ************/
@@ -59,7 +63,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  border-bottom: 1px solid #000;
 }
 
 .header__logo {
@@ -92,10 +95,17 @@ body {
   padding: 50px;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero__title {
@@ -110,14 +120,14 @@ body {
 }
 
 .hero__imgcontainer {
-  width: 50vw;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__img {
   width: 100%;
-  height: auto;
   transition: transform 0.3s ease;
 }
 
@@ -136,6 +146,7 @@ body {
   flex-direction: column;
   justify-content: center;
   filter: brightness(0.9);
+  height: 80vh;
 }
 
 .schedule__title {
@@ -164,22 +175,6 @@ body {
   line-height: 2;
   list-style: none;
   text-align: center;
-}
-
-.fadeInLeft {
-  animation: fadeInLeft 1.2s both;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
 }
 
 /************ GALERY HOME SECTION ************/
@@ -356,7 +351,7 @@ body {
 /************ CONTACT ************/
 
 .contact {
-  padding: 50px;
+  padding: 50px 50px 90px 50px;
 }
 
 .contact__content {
@@ -415,7 +410,7 @@ textarea {
 }
 
 .galerypage__paragraph {
-  width: 50vw;
+  text-align: center;
   line-height: 1.5;
 }
 
@@ -425,7 +420,6 @@ textarea {
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 20px;
   justify-items: center;
-  padding: 50px 0;
 }
 
 .galerysection__img {
@@ -455,16 +449,11 @@ textarea {
   text-transform: uppercase;
   font-size: 2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .teachers__paragraph {
-  width: 35vw;
   line-height: 1.5;
-}
-
-.teachers__imgcontainer {
-  width: 45vw;
-  height: 100%;
 }
 
 .teachers__img {
@@ -495,6 +484,13 @@ textarea {
 
 /************ ABOUT US ************/
 
+.aboutus__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutus__title {
   text-transform: uppercase;
   font-size: 2em;
@@ -502,13 +498,12 @@ textarea {
 }
 
 .aboutus__paragraph {
-  width: 35vw;
   line-height: 1.5;
 }
 
 .aboutus__imgcontainer {
-  width: 45vw;
-  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .aboutus__img {
@@ -517,20 +512,20 @@ textarea {
 }
 
 .valobj {
-  display: grid;
-  height: 80vh;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center;
+  display: flex;
   align-items: center;
   background-color: #a9294f;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23af384b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23b54748' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23bb5744' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23c16641' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23C7753D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  height: 100vh;
+  background-image: url("../images/objectives_bg.svg");
   background-attachment: fixed;
   background-size: cover;
   filter: brightness(0.9);
 }
 
 .valobj__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
 }
 
@@ -554,268 +549,6 @@ textarea {
 
 .fa-check {
   margin-right: 1em;
-}
-
-/************ MEDIA QUERIES ************/
-
-@media screen and (min-width: 576px) {
-  /************ HEADER SECTION ************/
-  .header {
-    padding: 0 20px;
-  }
-
-  .iconbar {
-    display: block;
-    color: #fff;
-  }
-
-  .fa-bars {
-    font-size: 24px;
-  }
-
-  /************ HERO SECTION ************/
-  .hero__title {
-    font-size: 1.8em;
-    font-weight: 600;
-  }
-
-  .hero__paragraph {
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 2em;
-  }
-
-  .hero__imgcontainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  /************ MENU MOBILE ************/
-  .mobile {
-    display: none;
-  }
-
-  /************ SCHEDULE SECTION ************/
-  .schedule {
-    background-position: center center;
-    height: 100vh;
-  }
-
-  .schedule__title {
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-bottom: 2em;
-  }
-
-  .schedule__content {
-    font-size: 15px;
-  }
-
-  .schedule__paragraph {
-    margin-left: 3em;
-  }
-
-  .schedule__shifts {
-    line-height: 2;
-    list-style: none;
-    text-align: center;
-  }
-
-  .schedule__content {
-    width: 100%;
-  }
-
-  /************ GALERY HOME SECTION ************/
-  .galery {
-    grid-template-columns: 100%;
-  }
-
-  /************ FOOTER ************/
-  .footer__paragraph {
-    font-size: 11px;
-  }
-
-  .footer__social__li a {
-    width: 30px;
-    height: 30px;
-    line-height: 25px;
-    margin: 0 10px;
-  }
-
-  .footer__container__logo {
-    width: 90px;
-    height: 90px;
-  }
-
-  /************ ABOUTUS ************/
-  .aboutus__title {
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 600;
-  }
-
-  .aboutus__paragraph {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-
-  .aboutus__imgcontainer {
-    width: 100%;
-    height: 100%;
-    margin-top: 2em;
-    overflow: hidden;
-  }
-
-  .valobj {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .valobj__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .valobj__ul {
-    margin-bottom: 2em;
-  }
-
-  /************ OUR TEACHERS ************/
-  .teachers__title {
-    font-size: 1.8em;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .teachers__paragraph {
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 2em;
-    width: 100%;
-  }
-
-  .teachers__imgcontainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  /************ CONTACT ************/
-  .contact__title{
-    font-size: 1.8em;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .form__contact {
-    text-align: center;
-  }
-
-  /************ GALERY PAGE ************/
-  .galerypage__title {
-    font-size: 1.8em;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .galerypage__paragraph {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /************ FOOTER ************/
-  .footer__paragraph {
-    font-size: 13px;
-    width: 45vw;
-    text-align: center;
-  }
-
-  /************ CONTACT ************/
-  .form__contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .galerypage__paragraph {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .hero {
-    display: flex;
-    justify-content: center;
-  }
-
-  .schedule {
-    height: 60vh;
-  }
-
-  .schedule__paragraph {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .schedule__content {
-    font-size: 16px;
-  }
-
-  .valobj {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 80vh;
-  }
-
-  .valobj__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .valobj__ul {
-    margin-bottom: 0;
-    font-size: 15px;
-  }
-
-  .aboutus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .aboutus__content {
-    width: 100%;
-  }
-
-  .aboutus__imgcontainer {
-    margin: 0;
-  }
-
-  .valobj__title {
-    font-size: 1.8em;
-  }
-
-  .valobj__paragraph {
-    font-size: 17px;
-  }
-
-  .valobj__ul {
-    font-size: 16px;
-  }
-
-  .galerypage__paragraph {
-    text-align: center;
-  }
 }
 
 /************ MEDIA QUERY PARA QUE A PARTIR DE 900 px SE MUESTRE EL MENÚ COMPLETO ************/
