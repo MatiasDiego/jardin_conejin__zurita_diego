@@ -1,0 +1,41 @@
+/************ SCHEDULE SECTION ************/
+
+.schedule {
+  background-color: #c7753d;
+  background-image: url(../images/rose-petals.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: brightness(0.9);
+  height: 80vh;
+}
+
+.h2title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.7em;
+  margin-bottom: 2.5em;
+}
+
+.shift {
+  width: 50vw;
+  margin: 0 auto;
+  line-height: 2;
+  color: #fff;
+
+  &__paragraph--shifts {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+.shiftslist {
+  line-height: 2;
+  list-style: none;
+  text-align: center;
+}

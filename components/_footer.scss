@@ -1,0 +1,100 @@
+/************ FOOTER ************/
+
+.footer {
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.contentfooter {
+  display: flex;
+  align-items: center;
+  height: 190px;
+
+  &__paragraph {
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.socialcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 190px;
+}
+
+.iconlist {
+  display: flex;
+  align-items: center;
+  &__li {
+    list-style: none;
+  }
+  &__li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 0 20px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  &__li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  &__li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  &__li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  &__li a:hover:before {
+    top: 0;
+  }
+  &__li:nth-child(1) a:before {
+    background: #3b5999;
+  }
+  &__li:nth-child(2) a:before {
+    background: #55acee;
+  }
+  &__li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+}
+
+.footerlogocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  &__logo {
+    width: 120px;
+    height: 120px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
