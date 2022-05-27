@@ -35,17 +35,17 @@ input {
 #mail {
   width: 300px;
   height: 25px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid $boderInputs;
 }
 
 #mensaje {
   width: 300px;
   height: 125px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid $boderInputs;
 }
 
 body {
-  background-color: #fdf6ec;
+  background-color: $bgColor;
   position: relative;
   min-height: 100vh;
   padding-bottom: 190px;
