@@ -65,3 +65,48 @@ $datacontact: (
     border-radius: 10px;
   }
 }
+
+/************ MEDIA QUERIES ************/
+@media screen and (min-width: 576px) {
+  @each $name, $color in $datacontact {
+    .#{$name} {
+      font-size: 12px;
+      margin-bottom: 1.2em;
+    }
+  }
+
+  .datacontact {
+    &__ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @each $name, $color in $datacontact {
+    .#{$name} {
+      font-size: .8em;
+    }
+  }
+
+  .datacontact {
+    margin-top: 3em;
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  @each $name, $color in $datacontact {
+    .#{$name} {
+      font-size: 1em;
+    }
+  }
+}

@@ -1,35 +1,14 @@
 /************ HEADER ************/
 
-.header {
-    width: 100%;
-    height: 100px;
-    background-color: #a9294f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-  }
-  
-  .header__logo {
-    width: 75px;
-    height: 75px;
-  }
-  
-  .header__img {
-    width: 100%;
-    height: auto;
-    padding: 5px;
-  }
-  
-  .header__li {
-    display: inline-block;
-    text-align: center;
-    margin: 0 0.5em;
-  }
-  
-  .header__a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
+.navbar {
+  background-color: #a9294f;
+}
+
+.nav-item a{
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-item a:hover {
+  color: #dd4b39;
+}

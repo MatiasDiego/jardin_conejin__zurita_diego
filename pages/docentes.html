@@ -18,59 +18,66 @@
         <script src="https://kit.fontawesome.com/c3a73af5c6.js" crossorigin="anonymous"></script>
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <!-- <link rel="stylesheet" href="../css/styles.css"> -->
         <!-- Title -->
         <title>Jardin de Infantes - Conejin</title>
     </head>
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="header__logo">
-            <img class="header__img" src="../images/logo_conejin.png" alt="Logo">
-        </div>
-        <!-- Nav Bar -->
-        <nav class="header__navbar mobile">
-            <ul class="header__ul">
-                <li class="header__li">
-                    <a class="header__a" href="../index.html">Inicio</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="quienes-somos.html">Quienes Somos</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="docentes.html">Docentes</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="galeria.html">Galería</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/logo_conejin.png" alt="" width="75" height="75">
+                </a>
+                <!-- TOGGLE BUTTON -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- NAVBAR LINKS-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes-somos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./docentes.html">DOCENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="iconbar">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
     <main>
         <!-- TEACHERS SECTION -->
         <div class="container">
             <div class="row teachers">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-6 teachers__content">
-                    <h1 class="teachers__title">Nuestras Docentes</h1>
-                    <p class="teachers__paragraph"> Nuestra Institución cuenta con docentes capacitadas para 
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-6 content">
+                    <h1 class="content__title">Nuestras Docentes</h1>
+                    <p class="content__paragraph"> Nuestra Institución cuenta con docentes capacitadas para 
                         ejercer una educación y acompañamiento idóneo para sus niños y niñas. Ellas proveerán 
                         de todo el cuidado y dedicación que ellos y ellas se merecen.
                     </p>
-                    <p class="teachers__paragraph"> Atentas, responsables, amables, cariñosas y siempre dispuestas 
+                    <p class="content__paragraph"> Atentas, responsables, amables, cariñosas y siempre dispuestas 
                         a educar con pasión y alegría, son las cualidades que diferencian a nuestro personal docente 
                         por sobre otras instituciones.
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-6">
-                    <div class="teachers__imgcontainer">
-                        <img class="teachers__img" src="../images/docentes.jpg" alt="Nuestras Docentes">
+                    <div class="imgcontainer">
+                        <img class="imgcontainer__img" src="../images/docentes.jpg" alt="Nuestras Docentes">
                     </div>
                 </div>
             </div>
@@ -98,30 +105,29 @@
 
     <!-- FOOTER -->
     <div class="container-fluid footer">
-        <div class="row footer__container">
-            <div class="footer__content col-sm-4">
-                <p class="footer__paragraph"> 
+        <div class="row">
+            <div class="col-sm-5 col-xl-4 contentfooter">
+                <p class="contentfooter__paragraph"> 
                     Sitio Web Realizado por Diego Matías Zurita - 
                     Todos los derechos reservados &#169 - 2022
                 </p>
             </div>
-            <div class="footer__social col-sm-4">
-                <ul class="footer__social__ul">
-                    <li class="footer__social__li">
-                      <a href="#">
-                        <i class="fab fa-facebook-f icon"></i> </a>
+            <div class="col-sm-4 col-xl-4 socialcontainer">
+                <ul class="iconlist">
+                    <li class="iconlist__li">
+                      <a href="#"><i class="fab fa-facebook-f icon"></i></a>
                     </li>
-                    <li class="footer__social__li">
+                    <li class="iconlist__li">
                       <a href="#"><i class="fab fa-twitter icon"></i></a>
                     </li>
-                    <li class="footer__social__li">
+                    <li class="iconlist__li">
                       <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
                     </li>
-                  </ul>
+                </ul>
             </div>
-            <div class="footer__logo col-sm-4">
-                <div class="footer__container__logo">
-                    <img src="../images/logo_conejin.png" alt="">
+            <div class="col-sm-3 col-xl-4 footerlogocontainer">
+                <div class="footerlogocontainer__logo">
+                    <img class="footerlogocontainer__img" src="../images/logo_conejin.png" alt="">
                 </div>
             </div>
         </div>

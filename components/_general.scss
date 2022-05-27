@@ -44,10 +44,6 @@ input {
   border: 1px solid #c2c2c2;
 }
 
-.header__ul {
-  margin-bottom: 0;
-}
-
 body {
   background-color: #fdf6ec;
   position: relative;
@@ -64,38 +60,45 @@ body {
   text-transform: uppercase;
 }
 
-/************ HEADER ************/
+/************ MEDIA QUERIES ************/
+@media screen and (min-width: 576px) {
+  .container {
+    height: 100%;
+  }
 
-.header {
-  width: 100%;
-  height: 100px;
-  background-color: #a9294f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+  .h1Template {
+    font-size: 1.8em;
+  }
+
+  .content__paragraph {
+    font-size: .9em;
+  }
 }
 
-.header__logo {
-  width: 75px;
-  height: 75px;
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100%;
+  }
+
+  .h1Template {
+    font-size: 2em;
+  }
+
+  .content__paragraph {
+    font-size: 1em;
+  }
 }
 
-.header__img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-}
+@media screen and (min-width: 992px) {
+  .container {
+    height: 100%;
+  }
 
-.header__li {
-  display: inline-block;
-  text-align: center;
-  margin: 0 0.5em;
-}
+  .h1Template {
+    font-size: 2.2em;
+  }
 
-.header__a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+  .content__paragraph {
+    font-size: 1em;
+  }
 }

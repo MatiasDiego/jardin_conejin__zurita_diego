@@ -1,0 +1,31 @@
+/************ CONTACT ************/
+
+.contactcontainer {
+    padding: 50px;
+}
+
+.form {
+  margin-top: 1.5em;
+  margin: auto;
+  width: 300px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.form__fields {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.form__fields input,
+textarea {
+  border: none;
+  padding: 0 0.5em;
+}
+
+.btncontainer__btn {
+  text-align: center;
+}

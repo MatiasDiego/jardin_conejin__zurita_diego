@@ -25,34 +25,40 @@
         <title>Jardin de Infantes - Conejin</title>
     </head>
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="header__logo">
-            <img class="header__img" src="../images/logo_conejin.png" alt="Logo">
-        </div>
-        <!-- Nav Bar -->
-        <nav class="header__navbar mobile">
-            <ul class="header__ul">
-                <li class="header__li">
-                    <a class="header__a" href="../index.html">Inicio</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="quienes-somos.html">Quienes Somos</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="docentes.html">Docentes</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="galeria.html">Galería</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/logo_conejin.png" alt="" width="75" height="75">
+                </a>
+                <!-- TOGGLE BUTTON -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- NAVBAR LINKS-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes-somos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./docentes.html">DOCENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="iconbar">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
     <main>

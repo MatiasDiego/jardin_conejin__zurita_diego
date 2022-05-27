@@ -98,3 +98,26 @@
     border-radius: 50%;
   }
 }
+
+/************ MEDIA QUERIES ************/
+@media screen and (min-width: 576px) {
+  .contentfooter {
+    &__paragraph {
+      font-size: .8em;
+    }
+  }
+
+  .iconlist {
+    padding: 0;
+    &__li a {
+      margin: 0 5px;
+    }
+  }
+
+  .footerlogocontainer {
+    &__logo {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/************ IMAGE GALERY ************/
+
+.galerypage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.galerysection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+.galerysection__img {
+  width: 25vw;
+  overflow: hidden;
+}
+
+.galerysection__img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.galerysection__img img:hover {
+  transform: scale(1.3);
+}
