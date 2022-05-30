@@ -1,0 +1,118 @@
+/************ GENERALS STYLES ************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@each $headings in (h1,h2,h3,h4,h5,h6) {
+  #{$headings} {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+}
+
+.h1Template {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+a,
+p,
+button,
+ul,
+li,
+label,
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+#nombre,
+#telefono,
+#mail {
+  width: 300px;
+  height: 25px;
+  border: 1px solid $boderInputs;
+}
+
+#mensaje {
+  width: 300px;
+  height: 125px;
+  border: 1px solid $boderInputs;
+}
+
+body {
+  background-color: $bgColor;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 190px;
+}
+
+.container {
+  height: 80vh;
+}
+
+@mixin valObj {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/************ MEDIA QUERIES ************/
+@media screen and (min-width: 320px) {
+  body {
+    padding: 0;
+  }
+  
+  .h1Template {
+    font-size: 1.7em;
+  }
+
+  .content__paragraph {
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    height: 100%;
+  }
+
+  .h1Template {
+    font-size: 1.8em;
+  }
+
+  .content__paragraph {
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100%;
+  }
+
+  .h1Template {
+    font-size: 2em;
+  }
+
+  .content__paragraph {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    height: 100%;
+  }
+
+  .h1Template {
+    font-size: 2.2em;
+  }
+
+  .content__paragraph {
+    font-size: 1em;
+  }
+}

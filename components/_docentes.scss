@@ -1,0 +1,44 @@
+/************ OUR TEACHERS ************/
+
+.teachers__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teachers__title {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.teachers__paragraph {
+  line-height: 1.5;
+}
+
+.teachers__img {
+  width: 100%;
+  height: auto;
+}
+
+.virtual {
+  padding: 50px 50px 80px 50px;
+  background-color: #a9294f;
+  background-image: url(../images/quantum-gradient.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.virtual__content {
+  text-align: center;
+  color: #fff;
+}
+
+.virtual__title {
+  text-transform: uppercase;
+}
+
+.virtual__paragraph {
+  margin: 2em 0 2em 0;
+}

@@ -1,0 +1,36 @@
+/************ GALERY HOME SECTION ************/
+
+.galeryimgcontainer {
+    margin-bottom: 2em;
+    &__img {
+        width: 100%;
+        opacity: 0.7;
+        transition: opacity 0.5s ease-out;
+        -moz-transition: opacity 0.5s ease-out;
+        -webkit-transition: opacity 0.5s ease-out;
+        -o-transition: opacity 0.5s ease-out;
+    }
+    &__img:hover {
+        opacity: 1;
+    }
+}
+  
+  .btncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btncontainer__btngalery {
+    background-color: #a9294f;
+    padding: 8px 18px;
+    border-radius: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    &__btngalery:hover {
+        background-color: #c7753d;
+    }
+  }
