@@ -100,6 +100,38 @@
 }
 
 /************ MEDIA QUERIES ************/
+@media screen and (min-width: 320px) {
+  .footer {
+    height: 100%;
+    position: relative;
+  }
+
+  .contentfooter {
+    height: 100px;
+    text-align: center;
+    &__paragraph {
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+
+  .socialcontainer {
+    height: 100px;
+  }
+
+  .iconlist {
+    padding: 0;
+  }
+
+  .footerlogocontainer {
+    height: 100%;
+    &__logo {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
 @media screen and (min-width: 576px) {
   .contentfooter {
     &__paragraph {

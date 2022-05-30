@@ -61,6 +61,20 @@ body {
 }
 
 /************ MEDIA QUERIES ************/
+@media screen and (min-width: 320px) {
+  body {
+    padding: 0;
+  }
+  
+  .h1Template {
+    font-size: 1.7em;
+  }
+
+  .content__paragraph {
+    font-size: .9em;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .container {
     height: 100%;
